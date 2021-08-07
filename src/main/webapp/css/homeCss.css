@@ -1,0 +1,16 @@
+body {
+    background-image: url("/uploadedImages/61333410-pastel-theme-mood-board-with-fashion-accessories-bag-sunglasses-for-girls-white-rustic-wooden-backgr.jpg");
+
+    padding-top: 90px;
+}
+
+
+.hero-text {
+    text-align: start;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+}
+

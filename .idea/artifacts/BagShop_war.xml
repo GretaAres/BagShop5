@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="BagShop:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>BagShop</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="BagShop-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="BagShop:war exploded" />
+    </root>
+  </artifact>
+</component>
