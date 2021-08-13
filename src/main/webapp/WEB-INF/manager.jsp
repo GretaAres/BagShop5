@@ -57,7 +57,7 @@
                     </td>
                     <td><%=user.getEmail()%>
                     </td>
-                    <td><%=user.getUserType()%>
+                    <td><%=user.getUserType().name()%>
                     </td>
                 </tr>
                 <% }
@@ -77,6 +77,8 @@
             <th>Price</th>
             <th>Count</th>
             <th>Picture</th>
+            <th>Type</th>
+            <th>Action</th>
         </tr>
         </thead>
         <tbody>
@@ -94,6 +96,10 @@
             </td>
             <td><%=bag.getPicUrl()%>
             </td>
+            <td><%=bag.getType().name()%>
+            </td>
+            <td><a href="/updateBag?id=<%=bag.getId()%>">Update</a> | <a
+                    href="/deleteBag?id=<%=bag.getId()%>">Delete</a></td>
         </tr>
         <% }
         }%>
@@ -107,7 +113,7 @@
         </tr>
         </tfoot>
     </table>
-    <a href="/newBags"><h1>Add Bag</h1></a>
+    <a href="/addBag"><h1>Add Bag</h1></a>
 
 
     <a href="/logout"><h1>Logout</h1></a>

@@ -58,6 +58,17 @@
                                 <input type="file" class="form-control" id="picture" name="picture">
                             </div>
                         </div>
+                        <div class="form-group">
+                            <label for="type" class="col-sm-3 control-label">Type</label>
+                            <div class="col-sm-9">
+                                <select name="type" id="type">
+                                    <option value="WOMEN">WOMEN</option>
+                                    <option value="MEN">MEN</option>
+                                    <option value="CHILD">CHILD</option>
+                                    <option value="NEW">NEW</option>
+                                </select>
+                            </div>
+                        </div>
 
                     </div>
                     <div class="form-group">

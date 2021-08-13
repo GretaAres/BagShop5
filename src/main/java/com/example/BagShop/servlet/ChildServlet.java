@@ -1,5 +1,6 @@
 package com.example.BagShop.servlet;
 
+import com.example.BagShop.enums.BagType;
 import com.example.BagShop.manager.BagManager;
 import com.example.BagShop.model.Bag;
 
@@ -17,7 +18,7 @@ public class ChildServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        List<Bag> bags = bagManager.getBags();
+        List<Bag> bags =  bagManager.getBags();
         req.setAttribute("bags", bags);
         req.getRequestDispatcher("/WEB-INF/child.jsp").forward(req, resp);
 
